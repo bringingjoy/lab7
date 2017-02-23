@@ -10,7 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
-	$('.likeBtn').click(sendAnalytics);
+//	var allLikeBtns = document.getElementsByClassName('likeBtn');
+//	allLikeBtns.click(sendAnalytics);
+	$(document).on("click", ".likeBtn", sendAnalytics);
 }
 
 function sendAnalytics() {
